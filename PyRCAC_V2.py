@@ -243,7 +243,7 @@ class RCAC:
    
         
         
-
+# move to a new file
 class System_definition:
     def __init__(self, A, B, C, D):
         self.A = A
@@ -281,7 +281,7 @@ class Filter_initializer:
             tensor_collapsed[m*ii:m*(ii+1), :] = tensor[ii, :, :]
         return tensor_collapsed     
             
-
+# move to a new file
 class Dynamic_Simulation:
     def __init__(self, Step = 500):
         self.Step = Step

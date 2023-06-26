@@ -20,8 +20,9 @@ my_system = PyRCAC_V2.System_definition(A, B, C, D)                             
 
 # my_system_tf = my_system.get_TF_from_ABCD()
 
+# Add N variable = matrix of Ni's
 
-my_controller = PyRCAC_V2.RCAC(Nc = 4, Rz = 1, Ru = 0e+1, RegZ = 1, FF = 0, Integrator = 1, FIR = 0, ContType = "dense", R0 = 1e5, Lambda = 0.9995)          # Second Step: Setup your RCAC control structure
+my_controller = PyRCAC_V2.RCAC(Nc = 4, Rz = 1, Ru = 0e+1, RegZ = 1, FF = 0, Integrator = 1, FIR = 0, ContType = "dense", R0 = 1e5, Lambda = 0.9995, Filt_Nu=N)          # Second Step: Setup your RCAC control structure
 
 
 
